@@ -1,26 +1,23 @@
-import React from 'react'
+import React from 'react';
+import styles from './Footer.module.css';
 
 const Footer = () => {
   return (
-    <>
-        <footer>
-            <div>
-                <p>logoipsum</p>
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae veniam harum id eveniet error vero deleniti perferendis dolorum possimus, asperiores vel dicta beatae, laboriosam eligendi provident sint neque hic quaerat?</p>
-            <div>
-                <ul>
-                    <li>About</li>
-                    <li>Careers</li>
-                    <li>History</li>
-                    <li>Services</li>
-                    <li>Projects</li>
-                    <li>Blog</li>
-                </ul>
-            </div>
-        </footer>
-    </>
-  )
-}
+    <footer className={styles.footer}>
+        <h1>logoipsum</h1>
+      <p className={styles.footerText}>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt consequuntur amet culpa cum itaque neque.
+      </p>
+      <ul className={styles.footerLinks}>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">History</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;

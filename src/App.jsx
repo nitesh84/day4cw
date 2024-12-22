@@ -1,17 +1,19 @@
-import Aside from "./components/Aside"
+
 import Footer from "./components/Footer"
 import Nav from "./components/Header/Nav"
-import Reviews from "./components/Reviews"
-import Search from "./components/Search/Search"
+import Quotes from "./components/Quotes/Quotes"
+import quote from "./quotes"
+
 import './App.css'
 function App() {
  
   return (
     <>
       <Nav></Nav>
-      <Search></Search>
-      <Aside></Aside>
-      <Reviews></Reviews>
+      
+      {quote.map((item, index) => (
+        <Quotes key={index} quote={item.quote} author={item.author} />
+      ))}
       <Footer></Footer>
     </>
   )

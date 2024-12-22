@@ -1,8 +1,0 @@
-main{
-    border: 1px solid red;
-    height: calc(100vh - 4rem );
-    background-image: url('../../assets/homeDecor.avif');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
